@@ -13,13 +13,22 @@ class ViewController: UIViewController {
     @IBOutlet var AllButtons: [UIButton]!
     
     @IBOutlet weak var Display: UILabel!
-    
-    
-    
+
+    // Included to ensure the status bar color compatibility
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        Display.numberOfLines=0;
+        [Display sizeToFit];
+        
+        print(Display.frame.size.width)
+        
+        
         
         for button in self.AllButtons {
             button.layer.cornerRadius = 5

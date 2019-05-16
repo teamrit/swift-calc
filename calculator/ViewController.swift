@@ -14,6 +14,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var Display: UILabel!
 
+    let ADDITION = "+";
+    let SUBTRACTION = "+";
+    let MULTIPLICATION = "+";
+    let DIVISION = "+";
+    
+    let operatorApplied = false;
+
+    
+    let operators = ["+" , "-" , "*", "/"];
+    
     // Included to ensure the status bar color compatibility
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -22,20 +32,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        Display.numberOfLines=0;
-        [Display sizeToFit];
-        
         print(Display.frame.size.width)
         
+        Display.translatesAutoresizingMaskIntoConstraints = false
+        Display.addConstraint(NSLayoutConstraint(item: Display, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: Display.frame.size.width))
         
         
         for button in self.AllButtons {
             button.layer.cornerRadius = 5
             button.layer.borderWidth = 1
-            print("INIT")
         }
-        
         
         
     }
@@ -47,20 +53,41 @@ class ViewController: UIViewController {
         var currentText = self.Display.text!;
         
         // Boolean Checks
+        
+        // a -> Checks for number
         var isButtonPressedNumber = false;
         var castedNumber = Int(pressedButtonText);
-        
         if (castedNumber != nil) {
             isButtonPressedNumber = castedNumber! >= 0;
         }
         
-        print(isButtonPressedNumber, pressedButtonText);
+        // b -> Checks for delete enter.
+        var isDeleteButton = sender.currentTitle == "Del";
+        
+        // c -> Checks for an operator.
+        var isOperator = operators.contains(pressedButtonText)
         
         switch true {
         case (isButtonPressedNumber):
             print("Something" , pressedButtonText);
-            self.Display.text = "\(Display.text!)\(pressedButtonText)";
-            print(self.Display.text);
+            let newText = Display.text! == "0" ? "" : Display.text!;
+            self.Display.text = "\(newText)\(pressedButtonText)";
+            
+        case (isDeleteButton):
+            var digits = currentText;
+            if (currentText.count != 0 ) {
+                let index1 =
+                    currentText.count == 1 ? nil :                  digits.index(digits.endIndex, offsetBy: -2)
+                self.Display.text = currentText.count == 1 ? String(0) : String(digits[...index1!]);
+            }
+        case (isOperator) : {
+            switch (pressedButtonText) {
+                case (ADDITION) : {
+                    
+                }
+            }
+        }
+            
         default:
             print("Default");
         }

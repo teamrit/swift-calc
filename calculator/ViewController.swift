@@ -33,14 +33,28 @@ class ViewController: UIViewController {
 
 
     @IBAction func ButtonPressed(_ sender: UIButton) {
-        print("button pressed");
-        print(sender.currentTitle!);
-        
-        
-        
-        var text = sender.currentTitle!;
+        // Declarations
+        var pressedButtonText = sender.currentTitle!;
         var currentText = self.Display.text!;
-        self.Display.text = currentText + sender.currentTitle!;
+        
+        // Boolean Checks
+        var isButtonPressedNumber = false;
+        var castedNumber = Int(pressedButtonText);
+        
+        if (castedNumber != nil) {
+            isButtonPressedNumber = castedNumber! >= 0;
+        }
+        
+        print(isButtonPressedNumber, pressedButtonText);
+        
+        switch true {
+        case (isButtonPressedNumber):
+            print("Something" , pressedButtonText);
+            self.Display.text = "\(Display.text!)\(pressedButtonText)";
+            print(self.Display.text);
+        default:
+            print("Default");
+        }
 
     }
 }

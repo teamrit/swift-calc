@@ -174,16 +174,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBk-Db-A2k">
-                                <rect key="frame" x="202" y="104" width="10.5" height="100"/>
-                                <color key="backgroundColor" red="0.86147319560223912" green="0.86147319560223912" blue="0.86147319560223912" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="RUg-me-Kmh"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="nZk-Qw-OHd">
                                 <rect key="frame" x="31" y="392" width="352" height="74"/>
                                 <subviews>
@@ -288,6 +278,16 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBk-Db-A2k">
+                                <rect key="frame" x="32" y="117" width="351" height="100"/>
+                                <color key="backgroundColor" red="0.86147319560223912" green="0.86147319560223912" blue="0.86147319560223912" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="RUg-me-Kmh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
@@ -297,11 +297,9 @@
                             <constraint firstItem="nZk-Qw-OHd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FWv-1K-NCq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rD2-sH-v0W" secondAttribute="bottom" constant="20" id="KpM-rG-ATp"/>
                             <constraint firstItem="9ha-8L-RrE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGk-5U-1tG"/>
-                            <constraint firstItem="oBk-Db-A2k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="NwY-BG-iFJ"/>
                             <constraint firstItem="Fg4-Y5-0dJ" firstAttribute="top" secondItem="9ha-8L-RrE" secondAttribute="bottom" constant="20" id="RoF-vR-eki"/>
                             <constraint firstItem="rD2-sH-v0W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UgT-5c-hoB"/>
                             <constraint firstItem="9ha-8L-RrE" firstAttribute="top" secondItem="IUV-cL-5YP" secondAttribute="bottom" constant="20" id="VJX-wN-Nld"/>
-                            <constraint firstItem="oBk-Db-A2k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c0l-VR-GHY"/>
                             <constraint firstItem="IUV-cL-5YP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l0N-ZH-wRL"/>
                             <constraint firstItem="IUV-cL-5YP" firstAttribute="top" secondItem="nZk-Qw-OHd" secondAttribute="bottom" constant="20" id="vjm-Qi-jEo"/>
                         </constraints>

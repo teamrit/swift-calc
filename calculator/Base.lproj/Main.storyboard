@@ -18,268 +18,333 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="9ha-8L-RrE">
-                                <rect key="frame" x="31.5" y="580" width="351" height="74"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="p6u-cj-Kkt">
+                                <rect key="frame" x="10" y="530" width="394" height="322"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTS-ZN-TTi">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <state key="normal" title="4">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbd-8c-jlg"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E1-UU-sZT">
-                                        <rect key="frame" x="107" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="5">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRe-Fx-ZVS"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBU-XY-eZV">
-                                        <rect key="frame" x="214" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="6">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2I5-U6-dQk"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUE-gj-0F3">
-                                        <rect key="frame" x="321" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="1" green="0.75459041019006168" blue="0.43687721655635259" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="*">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Qf-CS-Xkh"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="nZk-Qw-OHd">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="52.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-9L-dsa">
+                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="52.5"/>
+                                                <color key="backgroundColor" red="0.53379768094648972" green="1" blue="0.52834261626847556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VCL-9L-dsa" secondAttribute="height" constant="1" id="dCF-ex-QTz"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <state key="normal" title="C">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgH-bp-cf5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUB-kE-uFX">
+                                                <rect key="frame" x="113.5" y="0.0" width="53.5" height="52.5"/>
+                                                <color key="backgroundColor" red="0.53379768094648972" green="1" blue="0.52834261626847556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="AUB-kE-uFX" secondAttribute="height" constant="1" id="iYT-6w-yg0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="x²">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwl-R5-3nl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBd-Nq-wLN">
+                                                <rect key="frame" x="227" y="0.0" width="53.5" height="52.5"/>
+                                                <color key="backgroundColor" red="0.53379768094648972" green="1" blue="0.52834261626847556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="sBd-Nq-wLN" secondAttribute="height" multiplier="1:1" constant="1" id="6He-qo-PDC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="36"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="+/-">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="doH-ca-C9C"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbF-93-u4r">
+                                                <rect key="frame" x="340.5" y="0.0" width="53.5" height="52.5"/>
+                                                <color key="backgroundColor" red="1" green="0.75459041019999995" blue="0.43687721660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="IbF-93-u4r" secondAttribute="height" constant="1" id="Vxo-FL-eqE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kdu-q4-l3P"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-cL-5YP">
+                                        <rect key="frame" x="0.0" y="72.5" width="394" height="64.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-UQ-G72">
+                                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="64.5"/>
+                                                <color key="backgroundColor" red="0.60672727270000004" green="0.80242374630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Syp-UQ-G72" secondAttribute="height" constant="1" id="QEr-Ak-Qcg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RK3-bQ-IJa"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noj-zJ-mMf">
+                                                <rect key="frame" x="109.5" y="0.0" width="65.5" height="64.5"/>
+                                                <color key="backgroundColor" red="0.60672727270000004" green="0.80242374630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Noj-zJ-mMf" secondAttribute="height" constant="1" id="QhY-vn-MwX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNm-Ux-Bkd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-Mw-SaY">
+                                                <rect key="frame" x="219" y="0.0" width="65.5" height="64.5"/>
+                                                <color key="backgroundColor" red="0.60672727270000004" green="0.80242374630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="VeM-Mw-SaY" secondAttribute="height" constant="1" id="nNv-UU-k3g"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ro6-lY-c6m"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBc-gi-13r">
+                                                <rect key="frame" x="328.5" y="0.0" width="65.5" height="64.5"/>
+                                                <color key="backgroundColor" red="1" green="0.75459041019999995" blue="0.43687721660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="dBc-gi-13r" secondAttribute="height" constant="1" id="Qqb-K9-9BW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8AF-fY-CZx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="9ha-8L-RrE">
+                                        <rect key="frame" x="0.0" y="157" width="394" height="39.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTS-ZN-TTi">
+                                                <rect key="frame" x="0.0" y="0.0" width="41" height="39.5"/>
+                                                <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GTS-ZN-TTi" secondAttribute="height" constant="1" id="q6x-wg-b9a"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bbd-8c-jlg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E1-UU-sZT">
+                                                <rect key="frame" x="118" y="0.0" width="40.5" height="39.5"/>
+                                                <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="2E1-UU-sZT" secondAttribute="height" constant="1" id="G5i-m2-N5y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRe-Fx-ZVS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBU-XY-eZV">
+                                                <rect key="frame" x="235.5" y="0.0" width="41" height="39.5"/>
+                                                <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="vBU-XY-eZV" secondAttribute="height" constant="1" id="lqu-sE-yiI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="6">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2I5-U6-dQk"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUE-gj-0F3">
+                                                <rect key="frame" x="353.5" y="0.0" width="40.5" height="39.5"/>
+                                                <color key="backgroundColor" red="1" green="0.75459041019006168" blue="0.43687721655635259" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="LUE-gj-0F3" secondAttribute="height" constant="1" id="mWF-jz-Zq0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="*">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Qf-CS-Xkh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="Fg4-Y5-0dJ">
+                                        <rect key="frame" x="0.0" y="216.5" width="394" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-wr-U3d">
+                                                <rect key="frame" x="0.0" y="0.0" width="41" height="40"/>
+                                                <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="kJf-wr-U3d" secondAttribute="height" constant="1" id="k33-hx-Eqd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <state key="normal" title="7">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngp-Tx-gwl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-8z-6bD">
+                                                <rect key="frame" x="118" y="0.0" width="40.5" height="40"/>
+                                                <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="H8E-8z-6bD" secondAttribute="height" constant="1" id="7sB-IE-PAk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="8">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXj-7S-2gC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb9-4R-YwZ">
+                                                <rect key="frame" x="235.5" y="0.0" width="41" height="40"/>
+                                                <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lb9-4R-YwZ" secondAttribute="height" constant="1" id="Byp-KJ-xm4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="9">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swQ-jP-1yS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCA-ct-2zS">
+                                                <rect key="frame" x="353.5" y="0.0" width="40.5" height="40"/>
+                                                <color key="backgroundColor" red="1" green="0.75459041019006168" blue="0.43687721655635259" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="uCA-ct-2zS" secondAttribute="height" constant="1" id="49J-ft-bqd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="/">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJX-lL-fOq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="rD2-sH-v0W">
+                                        <rect key="frame" x="0.0" y="276.5" width="394" height="45.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1O-b4-B0B">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="45.5"/>
+                                                <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Q1O-b4-B0B" secondAttribute="height" constant="1" id="nJg-tY-Hei"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <state key="normal" title="0">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DUU-Dg-jM7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upT-aY-ruk">
+                                                <rect key="frame" x="116" y="0.0" width="46.5" height="45.5"/>
+                                                <color key="backgroundColor" red="0.8267258256601302" green="0.63796296835519284" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="upT-aY-ruk" secondAttribute="height" constant="1" id="Z1E-Ty-7GX"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title=".">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHd-l5-XmH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-jA-RfH">
+                                                <rect key="frame" x="231.5" y="0.0" width="47" height="45.5"/>
+                                                <color key="backgroundColor" red="0.8267258256601302" green="0.63796296835519284" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="gXS-jA-RfH" secondAttribute="height" constant="1" id="JXq-Gx-2es"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="34"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="Del">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTL-fZ-43b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwM-Ew-03H">
+                                                <rect key="frame" x="347.5" y="0.0" width="46.5" height="45.5"/>
+                                                <color key="backgroundColor" red="1" green="0.75459041019006168" blue="0.43687721655635259" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="lwM-Ew-03H" secondAttribute="height" constant="1" id="jls-XR-Bmc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
+                                                <size key="titleShadowOffset" width="2" height="2"/>
+                                                <state key="normal" title="=">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9k-3P-7NY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="Fg4-Y5-0dJ">
-                                <rect key="frame" x="31.5" y="674" width="351" height="74"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-wr-U3d">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <state key="normal" title="7">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ngp-Tx-gwl"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-8z-6bD">
-                                        <rect key="frame" x="107" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="8">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXj-7S-2gC"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lb9-4R-YwZ">
-                                        <rect key="frame" x="214" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="9">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="swQ-jP-1yS"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCA-ct-2zS">
-                                        <rect key="frame" x="321" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="1" green="0.75459041019006168" blue="0.43687721655635259" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="/">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJX-lL-fOq"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="69" translatesAutoresizingMaskIntoConstraints="NO" id="rD2-sH-v0W">
-                                <rect key="frame" x="32" y="768" width="350" height="74"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1O-b4-B0B">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727273941285" green="0.80242374631050928" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <state key="normal" title="0">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DUU-Dg-jM7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upT-aY-ruk">
-                                        <rect key="frame" x="99" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.8267258256601302" green="0.63796296835519284" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title=".">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tHd-l5-XmH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXS-jA-RfH">
-                                        <rect key="frame" x="198" y="0.0" width="53" height="74"/>
-                                        <color key="backgroundColor" red="0.8267258256601302" green="0.63796296835519284" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="34"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="Del">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lTL-fZ-43b"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwM-Ew-03H">
-                                        <rect key="frame" x="320" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="1" green="0.75459041019006168" blue="0.43687721655635259" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="=">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9k-3P-7NY"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="nZk-Qw-OHd">
-                                <rect key="frame" x="31" y="392" width="352" height="74"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-9L-dsa">
-                                        <rect key="frame" x="0.0" y="0.0" width="33" height="74"/>
-                                        <color key="backgroundColor" red="0.53379768094648972" green="1" blue="0.52834261626847556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <state key="normal" title="C">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgH-bp-cf5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUB-kE-uFX">
-                                        <rect key="frame" x="93" y="0.0" width="47" height="74"/>
-                                        <color key="backgroundColor" red="0.53379768094648972" green="1" blue="0.52834261626847556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="x²">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fwl-R5-3nl"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBd-Nq-wLN">
-                                        <rect key="frame" x="200" y="0.0" width="62" height="74"/>
-                                        <color key="backgroundColor" red="0.53379768094648972" green="1" blue="0.52834261626847556" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="+/-">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="doH-ca-C9C"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbF-93-u4r">
-                                        <rect key="frame" x="322" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="1" green="0.75459041019999995" blue="0.43687721660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kdu-q4-l3P"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-cL-5YP">
-                                <rect key="frame" x="31.5" y="486" width="351" height="74"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syp-UQ-G72">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727270000004" green="0.80242374630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <state key="normal" title="1">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RK3-bQ-IJa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Noj-zJ-mMf">
-                                        <rect key="frame" x="107" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727270000004" green="0.80242374630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="2">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNm-Ux-Bkd"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-Mw-SaY">
-                                        <rect key="frame" x="214" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="0.60672727270000004" green="0.80242374630000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="3">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ro6-lY-c6m"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBc-gi-13r">
-                                        <rect key="frame" x="321" y="0.0" width="30" height="74"/>
-                                        <color key="backgroundColor" red="1" green="0.75459041019999995" blue="0.43687721660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="47"/>
-                                        <size key="titleShadowOffset" width="2" height="2"/>
-                                        <state key="normal" title="-">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8AF-fY-CZx"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="oBk-Db-A2k">
-                                <rect key="frame" x="32" y="94" width="350" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="350" translatesAutoresizingMaskIntoConstraints="NO" id="oBk-Db-A2k">
+                                <rect key="frame" x="10" y="94" width="394" height="49"/>
                                 <color key="backgroundColor" red="0.86147319560223912" green="0.86147319560223912" blue="0.86147319560223912" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
@@ -288,48 +353,42 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="rD2-sH-v0W" firstAttribute="top" secondItem="Fg4-Y5-0dJ" secondAttribute="bottom" constant="20" id="0ok-tA-yKV"/>
                             <constraint firstItem="oBk-Db-A2k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2Sh-rd-6VN"/>
-                            <constraint firstItem="Fg4-Y5-0dJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A1t-Fj-XMg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rD2-sH-v0W" secondAttribute="bottom" constant="20" id="EZN-BW-fcF"/>
-                            <constraint firstItem="nZk-Qw-OHd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FWv-1K-NCq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rD2-sH-v0W" secondAttribute="bottom" constant="20" id="KpM-rG-ATp"/>
-                            <constraint firstItem="9ha-8L-RrE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NGk-5U-1tG"/>
-                            <constraint firstItem="Fg4-Y5-0dJ" firstAttribute="top" secondItem="9ha-8L-RrE" secondAttribute="bottom" constant="20" id="RoF-vR-eki"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="p6u-cj-Kkt" secondAttribute="bottom" constant="10" id="BdM-Dd-H9A"/>
+                            <constraint firstItem="p6u-cj-Kkt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Se6-pM-qle"/>
                             <constraint firstItem="oBk-Db-A2k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T1w-Od-Idk"/>
-                            <constraint firstItem="rD2-sH-v0W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UgT-5c-hoB"/>
-                            <constraint firstItem="9ha-8L-RrE" firstAttribute="top" secondItem="IUV-cL-5YP" secondAttribute="bottom" constant="20" id="VJX-wN-Nld"/>
-                            <constraint firstItem="IUV-cL-5YP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l0N-ZH-wRL"/>
-                            <constraint firstItem="IUV-cL-5YP" firstAttribute="top" secondItem="nZk-Qw-OHd" secondAttribute="bottom" constant="20" id="vjm-Qi-jEo"/>
+                            <constraint firstItem="oBk-Db-A2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WVP-xp-hiy"/>
+                            <constraint firstAttribute="trailing" secondItem="p6u-cj-Kkt" secondAttribute="trailing" constant="10" id="rtu-iC-l2E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oBk-Db-A2k" secondAttribute="trailing" constant="10" id="tEs-kP-Stv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Display" destination="oBk-Db-A2k" id="sU5-s3-P6C"/>
-                        <outletCollection property="AllButtons" destination="VCL-9L-dsa" collectionClass="NSMutableArray" id="FLn-An-6MB"/>
-                        <outletCollection property="AllButtons" destination="H8E-8z-6bD" collectionClass="NSMutableArray" id="On0-0L-skm"/>
-                        <outletCollection property="AllButtons" destination="upT-aY-ruk" collectionClass="NSMutableArray" id="EEy-sT-e3X"/>
-                        <outletCollection property="AllButtons" destination="IbF-93-u4r" collectionClass="NSMutableArray" id="kck-lU-Y4J"/>
-                        <outletCollection property="AllButtons" destination="sBd-Nq-wLN" collectionClass="NSMutableArray" id="Ycv-U1-uwQ"/>
                         <outletCollection property="AllButtons" destination="AUB-kE-uFX" collectionClass="NSMutableArray" id="ScZ-T7-2KD"/>
                         <outletCollection property="AllButtons" destination="VCL-9L-dsa" collectionClass="NSMutableArray" id="yis-hw-vQO"/>
-                        <outletCollection property="AllButtons" destination="GTS-ZN-TTi" collectionClass="NSMutableArray" id="B6V-1L-2wV"/>
-                        <outletCollection property="AllButtons" destination="2E1-UU-sZT" collectionClass="NSMutableArray" id="jyk-Vv-u7v"/>
-                        <outletCollection property="AllButtons" destination="vBU-XY-eZV" collectionClass="NSMutableArray" id="YQE-Op-9ki"/>
-                        <outletCollection property="AllButtons" destination="LUE-gj-0F3" collectionClass="NSMutableArray" id="WnW-uc-a1y"/>
-                        <outletCollection property="AllButtons" destination="kJf-wr-U3d" collectionClass="NSMutableArray" id="m8k-o0-X1u"/>
-                        <outletCollection property="AllButtons" destination="H8E-8z-6bD" collectionClass="NSMutableArray" id="h2c-X3-LXg"/>
-                        <outletCollection property="AllButtons" destination="lb9-4R-YwZ" collectionClass="NSMutableArray" id="08i-n8-Okr"/>
-                        <outletCollection property="AllButtons" destination="uCA-ct-2zS" collectionClass="NSMutableArray" id="dxL-8N-W0c"/>
-                        <outletCollection property="AllButtons" destination="Q1O-b4-B0B" collectionClass="NSMutableArray" id="1pe-Gs-25Z"/>
-                        <outletCollection property="AllButtons" destination="upT-aY-ruk" collectionClass="NSMutableArray" id="fSy-Eh-md1"/>
-                        <outletCollection property="AllButtons" destination="gXS-jA-RfH" collectionClass="NSMutableArray" id="wIf-ZD-u2p"/>
-                        <outletCollection property="AllButtons" destination="lwM-Ew-03H" collectionClass="NSMutableArray" id="Ico-Mc-D9d"/>
-                        <outletCollection property="AllButtons" destination="VeM-Mw-SaY" collectionClass="NSMutableArray" id="1R0-HG-xuq"/>
-                        <outletCollection property="AllButtons" destination="Noj-zJ-mMf" collectionClass="NSMutableArray" id="Uxk-4Q-Oqb"/>
-                        <outletCollection property="AllButtons" destination="Syp-UQ-G72" collectionClass="NSMutableArray" id="qAr-wC-MRG"/>
+                        <outletCollection property="AllButtons" destination="sBd-Nq-wLN" collectionClass="NSMutableArray" id="Ycv-U1-uwQ"/>
+                        <outletCollection property="AllButtons" destination="IbF-93-u4r" collectionClass="NSMutableArray" id="kck-lU-Y4J"/>
+                        <outletCollection property="AllButtons" destination="VCL-9L-dsa" collectionClass="NSMutableArray" id="FLn-An-6MB"/>
                         <outletCollection property="AllButtons" destination="VeM-Mw-SaY" collectionClass="NSMutableArray" id="dea-bH-Iz7"/>
                         <outletCollection property="AllButtons" destination="dBc-gi-13r" collectionClass="NSMutableArray" id="rDw-pU-R2f"/>
+                        <outletCollection property="AllButtons" destination="Noj-zJ-mMf" collectionClass="NSMutableArray" id="Uxk-4Q-Oqb"/>
+                        <outletCollection property="AllButtons" destination="VeM-Mw-SaY" collectionClass="NSMutableArray" id="1R0-HG-xuq"/>
+                        <outletCollection property="AllButtons" destination="Syp-UQ-G72" collectionClass="NSMutableArray" id="qAr-wC-MRG"/>
+                        <outletCollection property="AllButtons" destination="LUE-gj-0F3" collectionClass="NSMutableArray" id="WnW-uc-a1y"/>
+                        <outletCollection property="AllButtons" destination="vBU-XY-eZV" collectionClass="NSMutableArray" id="YQE-Op-9ki"/>
+                        <outletCollection property="AllButtons" destination="GTS-ZN-TTi" collectionClass="NSMutableArray" id="B6V-1L-2wV"/>
+                        <outletCollection property="AllButtons" destination="2E1-UU-sZT" collectionClass="NSMutableArray" id="jyk-Vv-u7v"/>
+                        <outletCollection property="AllButtons" destination="lb9-4R-YwZ" collectionClass="NSMutableArray" id="08i-n8-Okr"/>
+                        <outletCollection property="AllButtons" destination="H8E-8z-6bD" collectionClass="NSMutableArray" id="h2c-X3-LXg"/>
+                        <outletCollection property="AllButtons" destination="H8E-8z-6bD" collectionClass="NSMutableArray" id="On0-0L-skm"/>
+                        <outletCollection property="AllButtons" destination="uCA-ct-2zS" collectionClass="NSMutableArray" id="dxL-8N-W0c"/>
+                        <outletCollection property="AllButtons" destination="kJf-wr-U3d" collectionClass="NSMutableArray" id="m8k-o0-X1u"/>
+                        <outletCollection property="AllButtons" destination="upT-aY-ruk" collectionClass="NSMutableArray" id="EEy-sT-e3X"/>
+                        <outletCollection property="AllButtons" destination="Q1O-b4-B0B" collectionClass="NSMutableArray" id="1pe-Gs-25Z"/>
+                        <outletCollection property="AllButtons" destination="lwM-Ew-03H" collectionClass="NSMutableArray" id="Ico-Mc-D9d"/>
+                        <outletCollection property="AllButtons" destination="gXS-jA-RfH" collectionClass="NSMutableArray" id="wIf-ZD-u2p"/>
+                        <outletCollection property="AllButtons" destination="upT-aY-ruk" collectionClass="NSMutableArray" id="fSy-Eh-md1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

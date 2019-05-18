@@ -41,8 +41,12 @@ class ViewController: UIViewController {
         for button in self.AllButtons {
             button.layer.cornerRadius = 5
             button.layer.borderWidth = 1
+            button.titleEdgeInsets.left = 5.0
+            button.titleEdgeInsets.right = 5.0
+            button.titleEdgeInsets.top = 5.0
+            button.titleEdgeInsets.bottom = 5.0
+            
         }
-        
         
     }
 
@@ -65,7 +69,10 @@ class ViewController: UIViewController {
         let isDeleteButton = sender.currentTitle == "Del";
         
         // c -> Checks for an operator.
-        _ = operators.contains(pressedButtonText)
+        let isOperator = operators.contains(pressedButtonText)
+        
+        // d -> Checks if "C" is pressed
+        let isClearPressed = sender.currentTitle == "C";
         
         switch true {
         case (isButtonPressedNumber):
@@ -77,16 +84,23 @@ class ViewController: UIViewController {
             let digits = currentText;
             if (currentText.count != 0 ) {
                 let index1 =
-                    currentText.count == 1 ? nil :                  digits.index(digits.endIndex, offsetBy: -2)
+                    currentText.count == 1 ?
+                        nil : digits.index(digits.endIndex, offsetBy: -2)
                 self.Display.text = currentText.count == 1 ? String(0) : String(digits[...index1!]);
             }
-//        case (isOperator) : {
-//            switch (pressedButtonText) {
-//                case (ADDITION) : {
-//
-//                }
-//            }
-//        }
+        case (isClearPressed) :
+            // FUTURE: History needs to be cleared at this point.
+            print("Clear Pressed")
+            self.Display.text = "0";
+            
+        case (isOperator) :
+            switch (pressedButtonText) {
+                case ("+") :
+                    print("+")
+                default :
+                    print("Default")
+                
+            }
             
         default:
             print("Default");

@@ -41,11 +41,6 @@ class ViewController: UIViewController {
         for button in self.AllButtons {
             button.layer.cornerRadius = 5
             button.layer.borderWidth = 1
-            button.titleEdgeInsets.left = 5.0
-            button.titleEdgeInsets.right = 5.0
-            button.titleEdgeInsets.top = 5.0
-            button.titleEdgeInsets.bottom = 5.0
-            
         }
         
     }

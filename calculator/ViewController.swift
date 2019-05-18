@@ -49,23 +49,23 @@ class ViewController: UIViewController {
 
     @IBAction func ButtonPressed(_ sender: UIButton) {
         // Declarations
-        var pressedButtonText = sender.currentTitle!;
-        var currentText = self.Display.text!;
+        let pressedButtonText = sender.currentTitle!;
+        let currentText = self.Display.text!;
         
         // Boolean Checks
         
         // a -> Checks for number
         var isButtonPressedNumber = false;
-        var castedNumber = Int(pressedButtonText);
+        let castedNumber = Int(pressedButtonText);
         if (castedNumber != nil) {
             isButtonPressedNumber = castedNumber! >= 0;
         }
         
         // b -> Checks for delete enter.
-        var isDeleteButton = sender.currentTitle == "Del";
+        let isDeleteButton = sender.currentTitle == "Del";
         
         // c -> Checks for an operator.
-        var isOperator = operators.contains(pressedButtonText)
+        _ = operators.contains(pressedButtonText)
         
         switch true {
         case (isButtonPressedNumber):
@@ -74,19 +74,19 @@ class ViewController: UIViewController {
             self.Display.text = "\(newText)\(pressedButtonText)";
             
         case (isDeleteButton):
-            var digits = currentText;
+            let digits = currentText;
             if (currentText.count != 0 ) {
                 let index1 =
                     currentText.count == 1 ? nil :                  digits.index(digits.endIndex, offsetBy: -2)
                 self.Display.text = currentText.count == 1 ? String(0) : String(digits[...index1!]);
             }
-        case (isOperator) : {
-            switch (pressedButtonText) {
-                case (ADDITION) : {
-                    
-                }
-            }
-        }
+//        case (isOperator) : {
+//            switch (pressedButtonText) {
+//                case (ADDITION) : {
+//
+//                }
+//            }
+//        }
             
         default:
             print("Default");

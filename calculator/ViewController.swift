@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     let MULTIPLICATION = "*";
     let DIVISION = "=";
     
+    let SQUARE = "x²";
+    
     let FIRST_OPERATOR = "FIRST_OPERATOR";
     
     let operatorApplied = false;
@@ -73,6 +75,11 @@ class ViewController: UIViewController {
         // f -> When a decimal is pressed.
         let isDecimalPressed = sender.currentTitle == ".";
         
+        // g -> Check if Square a number is pressed
+        let isSquarePressed = sender.currentTitle == SQUARE;
+        
+        var FIRST_OPERATOR = "";
+        
         switch true {
             case (isButtonPressedNumber):
                 print("Something" , pressedButtonText);
@@ -109,19 +116,31 @@ class ViewController: UIViewController {
                     self.Display.text = "\(currentText).";
                 }
             case (isOperator) :
-                _setStringInStore(key: FIRST_OPERATOR, value: currentText);
+                // _setStringInStore(key: FIRST_OPERATOR, value: currentText);
                 switch (pressedButtonText) {
                     case ("+") :
-                        _setStringInStore(key: FIRST_OPERATOR, value: currentText)
-                        currentOperator = "+";
-                        self.Display.text = "0";
-                        
-                        
-                        print("+")
+                        if (currentOperator == "") {
+                            let firstOperator = _getStringFromStore(key: FIRST_OPERATOR)
+                            
+                            if (firstOperator != "Error") {
+                                let result = _doArithmetic(firstNumber: firstOperator, arithmeticSign: ADDITION, secondNumber: currentText)
+                                self.Display.text = result;
+                            } else {
+                                self.Display.text = "0";
+                            }
+                            _setStringInStore(key: FIRST_OPERATOR, value: currentText)
+                        } else {
+                            
+                        }
+                       
                     default :
                         print("Default")
                     
                 }
+            case (isSquarePressed) :
+                var result = _doArithmetic(firstNumber: currentText, arithmeticSign: MULTIPLICATION, secondNumber: currentText)
+                print(result)
+                self.Display.text = result
             
             default:
                 print("Default");
@@ -152,9 +171,27 @@ class ViewController: UIViewController {
         }
     }
     
-//    func _doArithmetic(firstOperator: String, sth: String, secondOperator: String) -> Double {
-//        sth == ADDITION ? return (Double(firstOperator) + Double(secondOperator)); : return Double("0.0");
-//    }
+    func _doArithmetic(firstNumber: String, arithmeticSign: String, secondNumber: String) -> String {
+        switch arithmeticSign {
+        case "+":
+            let first = Float(firstNumber);
+            let second = Float(secondNumber);
+            if (first != nil && second != nil) {
+                return String(first! + second!);
+            }
+            return "Error";
+        case MULTIPLICATION:
+            let first = Float(firstNumber);
+            let second = Float(secondNumber);
+            if (first != nil && second != nil) {
+                return String(first! * second!);
+            }
+            return "Error";
+        default:
+            print("Default")
+        }
+        return "Default";
+    }
     
 }
 

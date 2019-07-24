@@ -14,6 +14,7 @@
 		28C22B73228C9F4900DD97B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C22B71228C9F4900DD97B9 /* LaunchScreen.storyboard */; };
 		28C22B7E228C9F4900DD97B9 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C22B7D228C9F4900DD97B9 /* calculatorTests.swift */; };
 		28C22B89228C9F4900DD97B9 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C22B88228C9F4900DD97B9 /* calculatorUITests.swift */; };
+		28F2D7412295D66B00A3E7EF /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F2D7402295D66B00A3E7EF /* Calculations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		28C22B84228C9F4900DD97B9 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C22B88228C9F4900DD97B9 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		28C22B8A228C9F4900DD97B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F2D7402295D66B00A3E7EF /* Calculations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				28C22B68228C9F4800DD97B9 /* AppDelegate.swift */,
+				28F2D7402295D66B00A3E7EF /* Calculations.swift */,
 				28C22B6A228C9F4800DD97B9 /* ViewController.swift */,
 				28C22B6C228C9F4800DD97B9 /* Main.storyboard */,
 				28C22B6F228C9F4900DD97B9 /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C22B6B228C9F4800DD97B9 /* ViewController.swift in Sources */,
+				28F2D7412295D66B00A3E7EF /* Calculations.swift in Sources */,
 				28C22B69228C9F4800DD97B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

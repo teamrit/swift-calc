@@ -18,22 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-n6-ZOU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cde-Yc-Pas">
-                                        <rect key="frame" x="141" y="416" width="133" height="65"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="55"/>
-                                        <color key="textColor" red="0.99877264389999998" green="0.47443364539999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiW-n6-ZOU">
+                                <rect key="frame" x="10" y="10" width="394" height="876"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cde-Yc-Pas">
+                                <rect key="frame" x="138.9203980099503" y="416.06135986733011" width="133" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="55"/>
+                                <color key="textColor" red="0.99877264389999998" green="0.47443364539999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SiW-n6-ZOU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="10" id="Hmx-uN-Ohp"/>
+                            <constraint firstItem="SiW-n6-ZOU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U5I-Qr-q6X"/>
+                            <constraint firstAttribute="trailing" secondItem="SiW-n6-ZOU" secondAttribute="trailing" constant="10" id="Z6B-3G-xIW"/>
+                            <constraint firstItem="SiW-n6-ZOU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="10" id="aVX-f5-Fiz"/>
+                            <constraint firstItem="SiW-n6-ZOU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cf0-JM-ePL"/>
+                            <constraint firstAttribute="bottom" secondItem="SiW-n6-ZOU" secondAttribute="bottom" constant="10" id="p3i-3I-bt1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

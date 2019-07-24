@@ -18,16 +18,17 @@ class ViewController: UIViewController {
     let SUBTRACTION = "-";
     let MULTIPLICATION = "*";
     let DIVISION = "=";
-    
+
     let SQUARE = "x²";
-    
     let FIRST_OPERATOR = "FIRST_OPERATOR";
     
     let operatorApplied = false;
-    
     var currentOperator = "";
     
     let operators = ["+" , "-" , "*", "/"];
+    
+    var calculator = Calculations()
+    var isReadyTocceptNewNumber = true
     
     // Included to ensure the status bar color compatibility
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -36,17 +37,16 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print(Display.frame.size.width)
-        
-        Display.translatesAutoresizingMaskIntoConstraints = false
-        Display.addConstraint(NSLayoutConstraint(item: Display, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: Display.frame.size.width))
-        
+//        Display.translatesAutoresizingMaskIntoConstraints = false
+//        Display.addConstraint(NSLayoutConstraint(item: Display, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: Display.frame.size.width))
         _setButtonsProgrammaticDesign();
-        
     }
 
     @IBAction func ButtonPressed(_ sender: UIButton) {
+        
+        // TODO: Remove after development
+        print("\(sender.currentTitle!) pressed")
+        
         // Declarations
         let pressedButtonText = sender.currentTitle!;
         let currentText = self.Display.text!;
@@ -67,24 +67,31 @@ class ViewController: UIViewController {
         let isOperator = operators.contains(pressedButtonText)
         
         // d -> Checks if "C" is pressed
-        let isClearPressed = sender.currentTitle == "C";
+        let isClearPressed = sender.currentTitle == "C"
         
         // e -> Negator is pressed
-        let isNegatorPressed = sender.currentTitle == "+/-";
+        let isNegatorPressed = sender.currentTitle == "+/-"
         
         // f -> When a decimal is pressed.
-        let isDecimalPressed = sender.currentTitle == ".";
+        let isDecimalPressed = sender.currentTitle == "."
         
         // g -> Check if Square a number is pressed
-        let isSquarePressed = sender.currentTitle == SQUARE;
+        let isSquarePressed = sender.currentTitle == SQUARE
         
-        var FIRST_OPERATOR = "";
+        // h -> Checks if equals sign was pressed
+        let isEqualsPressed = sender.currentTitle == "="
+        
+        var FIRST_OPERATOR = ""
         
         switch true {
             case (isButtonPressedNumber):
-                print("Something" , pressedButtonText);
-                let newText = Display.text! == "0" ? "" : Display.text!;
-                self.Display.text = "\(newText)\(pressedButtonText)";
+                if (!currentText.contains("e") && !isReadyTocceptNewNumber) {
+                    let newText = Display.text! == "0" ? "" : Display.text!;
+                    self.Display.text = "\(newText)\(pressedButtonText)";
+                } else {
+                    self.Display.text = "\(pressedButtonText)"
+                }
+                isReadyTocceptNewNumber = false
             
             case (isDeleteButton):
                 let digits = currentText;
@@ -109,39 +116,44 @@ class ViewController: UIViewController {
             
             case (isClearPressed) :
                 // FUTURE: History needs to be cleared at this point.
-                print("Clear Pressed")
-                self.Display.text = "0";
+                calculator.reset()
+                _displayOnScreen(value: "0")
             case (isDecimalPressed) :
                 if (!currentText.contains(".")) {
-                    self.Display.text = "\(currentText).";
+                   _displayOnScreen(value: "\(currentText).");
                 }
+            
             case (isOperator) :
-                // _setStringInStore(key: FIRST_OPERATOR, value: currentText);
                 switch (pressedButtonText) {
-                    case ("+") :
-                        if (currentOperator == "") {
-                            let firstOperator = _getStringFromStore(key: FIRST_OPERATOR)
-                            
-                            if (firstOperator != "Error") {
-                                let result = _doArithmetic(firstNumber: firstOperator, arithmeticSign: ADDITION, secondNumber: currentText)
-                                self.Display.text = result;
-                            } else {
-                                self.Display.text = "0";
-                            }
-                            _setStringInStore(key: FIRST_OPERATOR, value: currentText)
+                    case "+", "-" , "*" , "/" :
+                        print("Plus pressed")
+                        calculator.firstNumber = Double(currentText)
+                        calculator.operation = sender.currentTitle!
+                        isReadyTocceptNewNumber = true
+                    case ("=") :
+                        calculator.secondNumber = Double(currentText)
+                        if let result = calculator.calculateResult() {
+                            self.Display.text = String(result)
                         } else {
-                            
+                            self.Display.text = "Error"
                         }
-                       
                     default :
                         print("Default")
                     
                 }
-            case (isSquarePressed) :
-                var result = _doArithmetic(firstNumber: currentText, arithmeticSign: MULTIPLICATION, secondNumber: currentText)
-                print(result)
-                self.Display.text = result
+            case (isEqualsPressed) :
+                calculator.secondNumber = Double(currentText)
+                if (calculator.firstNumber != nil) {
+                    _displayOnScreen(value: String(calculator.calculateResult()!))
+                }
+                
             
+            case (isSquarePressed) :
+                calculator.firstNumber = Double(currentText)
+                calculator.secondNumber = calculator.firstNumber
+                calculator.operation = MULTIPLICATION
+                _displayOnScreen(value: String(calculator.calculateResult()!))
+
             default:
                 print("Default");
         }
@@ -191,6 +203,10 @@ class ViewController: UIViewController {
             print("Default")
         }
         return "Default";
+    }
+    
+    func _displayOnScreen(value: String) {
+        self.Display.text = value
     }
     
 }
